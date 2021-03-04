@@ -1,0 +1,6 @@
+services:
+- type: web
+  name: vr-cafe
+  env: static
+  buildCommand: yarn; yarn generate
+  staticPublishPath: dist
