@@ -27,7 +27,7 @@ html {
 }
 
 .container {
-  @apply min-h-screen flex justify-center items-center text-center mx-auto;
+  @apply min-h-screen flex justify-start items-center text-center mx-auto;
 }
 
 .title {

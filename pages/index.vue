@@ -1,10 +1,30 @@
 <template>
-  <div class="container">
+  <div class="container flex-col justify-between">
+    <TheImage />
+    <TheImage />
     <h1 class="title">Accueil</h1>
+    <div class="w-full flex justify-center border border-gray-100">
+      <p class="w-1/2 border border-gray-100">{{ jeu.texte }}</p>
+      <img
+        class="w-1/2 border border-gray-100 order-first"
+        :src="jeu.image"
+        alt="alt text"
+      />
+    </div>
   </div>
 </template>
 
 <script>
+export default {
+  data() {
+    return {
+      jeu: {
+        image: 'https://via.placeholder.com/150',
+        texte: 'lorem ipsum',
+      },
+    }
+  },
+}
 // import axios from 'axios'
 
 // export default {
