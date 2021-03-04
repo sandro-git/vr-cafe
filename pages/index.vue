@@ -5,7 +5,24 @@
 </template>
 
 <script>
-export default {}
+// import axios from 'axios'
+
+// export default {
+//   data() {
+//     return {
+//       restaurants: [],
+//       error: null,
+//     }
+//   },
+//   async mounted() {
+//     try {
+//       const response = await axios.get('http://localhost:1337/restaurants')
+//       this.restaurants = response.data
+//     } catch (error) {
+//       this.error = error
+//     }
+//   },
+// }
 </script>
 
 <style>
