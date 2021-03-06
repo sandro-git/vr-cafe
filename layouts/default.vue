@@ -35,7 +35,6 @@ html {
     'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
   display: block;
   font-weight: 300;
-  font-size: 100px;
   letter-spacing: 1px;
 }
 </style>
