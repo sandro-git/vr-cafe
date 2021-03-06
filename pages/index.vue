@@ -2,12 +2,12 @@
   <div class="container flex-col justify-between">
     <TheImage />
     <TheImage />
-    <h1 class="title">Accueil</h1>
+    <h1 class="title">{{ jeu.titre }}</h1>
     <div class="w-full flex justify-center border border-gray-100">
       <p class="w-1/2 border border-gray-100">{{ jeu.texte }}</p>
       <img
         class="w-1/2 border border-gray-100 order-first"
-        :src="jeu.image"
+        :src="require(`~/assets/img/${jeu.image}`)"
         alt="alt text"
       />
     </div>
@@ -19,7 +19,8 @@ export default {
   data() {
     return {
       jeu: {
-        image: 'https://via.placeholder.com/150',
+        titre: 'pangman',
+        image: 'pangman.jpg',
         texte: 'lorem ipsum',
       },
     }
